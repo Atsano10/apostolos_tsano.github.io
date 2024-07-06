@@ -1,0 +1,165 @@
+.menu-bar {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 30px;
+  color:white;
+}
+
+.header-button {
+  border: none;
+  color:white;
+  font-family: Orbitron;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.logo {
+  font-size: 50px;
+  font-weight: Bold;
+  margin-right: 110px;
+  margin-left: 20px;
+}
+
+.buttons {
+  text-align: right;
+  align-items: center;
+  min-width: fit-content;
+  max-width: 100px;
+  display: flex;
+}
+
+.button-space {
+  margin-left: 60px;
+}
+
+.home {
+  height: 750px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(6, 5, 28);
+
+}
+
+.about-me-container {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  padding-top: 20px;
+  font-family: Orbitron;
+  align-items: center;
+  flex-direction: column;
+}
+
+.topic-images {
+  height: 160px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.mission {
+  font-size: 20px;
+  padding: 30px;
+  flex-direction: column;
+}
+
+.topic-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  background-color: white;
+  font-family: Orbitron;
+  padding-top: 70px;
+  
+}
+
+.topic-texts {
+  width: 500px;
+  padding: 30px;
+}
+
+
+.layout {
+  margin-top: -9px;
+  margin-left: -9px;
+  margin-right: -9px;
+}
+
+.heading-container {
+  height:fit-content;
+  color: white;
+  font-family: Orbitron;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding-top:30px ;
+  background-color: black;
+  font-size: 25px;
+  height: 1000px;
+}
+
+.button-container {
+  height:fit-content;
+  color: white;
+  font-family: Orbitron;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  padding-top:20px ;
+  background-color: black;
+  font-size: 25px;
+}
+
+.important-buttons{
+  border:0px;
+  background-color: black;
+  color: white;
+  font-family: Orbitron;
+  font-size: 15px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+button:hover {
+  color: rgba(246, 246, 81, 0.7);
+  cursor: pointer;
+}
+
+button:active {
+  color: rgb(246, 246, 81);
+}
+
+
+
+#starry-background {
+  background-color: rgb(6, 5, 28);
+  position: absolute;
+  width: 100%;
+  height: 1200px;
+  z-index: 0;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  animation: twinkle 3s linear infinite;
+  z-index: 1;
+}
+
+@keyframes twinkle {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
