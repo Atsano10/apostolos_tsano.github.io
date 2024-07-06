@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostolos Tsano</title>
+    <link href="/css/index.css" rel="stylesheet">
+    <link href="/css/background.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<main>
+
+    <div class="layout">
+
+        <div class="home">
+            <div class="menu-bar">
+                <div class="logo">Tsano</div>
+                <div class="buttons">
+                    <div class="button-space"><button class="header-button">Home</button></div>
+                    <div class="button-space"><button class="header-button">Projects</button></div>
+                    <div class="button-space"><button class="header-button">About Me</button></div>
+                    <div class="button-space"><button class="header-button">Contact Me</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sky"></div>
+        <div class="moon"></div>
+        <div class="asteroid"></div>
+
+    </div>
+
+    <div class="about-me-container">
+        <div style="  font-size: 50px; color: black;">About Me</div>
+        <div class="mission">My passion and goal is to create technology for entertainment and simplication of day to day tasks.</div>
+    </div>
+    <div class="topic-container">
+        <div>
+            <img class="topic-images" src="/images/gaming.png">
+            <div class="topic-texts">Beginning ever since I was a kid these gaming sessions served as my stress-relieving escape and safe haven. Now, I'm passionate about creating games that offer others the same joy and refuge. I strive to develop immersive experiences that not only entertain but also inspire and connect players globally. </div>
+        </div>
+        <div>
+            <img class="topic-images" src="/images/teaching.png">
+            <div class="topic-texts">My journey into using technology to empower underrepresented teens in education stems from my own experiences. Growing up as first generation college student that migrated from Greece when I was only 6, I witnessed firsthand how access to quality education can transform lives. Now, as a dedicated technologist, my mission is to leverage innovative technologies to provide free, accessible education to teens who may not have had these opportunities otherwise. By creating intuitive platforms and leveraging digital tools, I aim to bridge educational gaps and empower future generations to thrive in a rapidly evolving world.</div>
+        </div>
+    </div>
+
+    <div class="heading-container">
+        <h1 style="z-index: 4;">My Journey</h1>
+        <div id="starry-background"></div>
+    </div>
+
+    <div class="button-container">
+        <button class="important-buttons">Contact me</button>
+        <div style="z-index:10"><img____________></div>
+        <button onclick="window.location.href='http://127.0.0.1:5500/projects.html';" class="important-buttons">My Project Portfolio</button>
+    </div>
+
+
+</main>
+
+<script src="/js/index.js"></script>
+
+<script>
+    const starryBackground = document.getElementById('starry-background');
+    const numStars = 200;
+
+    for (let i = 0; i < numStars; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.top = `${Math.random() * 100}%`;
+        star.style.animationDuration = `${1 + Math.random() * 2}s`;
+        star.style.animationDelay = `${Math.random() * 2}s`;
+        star.style.transform = `scale(${0.2 + Math.random() * 0.8})`;
+        star.style.opacity = `${0.2 + Math.random() * 0.6}`;
+        starryBackground.appendChild(star);
+    }
+</script>
+
+</body>
+</html>
